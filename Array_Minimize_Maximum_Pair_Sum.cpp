@@ -1,3 +1,8 @@
+#include <iostream>
+#include <vector>
+#include <algorithm>
+using namespace std;
+
 class Solution {
 public:
     int minPairSum(vector<int>& nums) {
@@ -12,7 +17,24 @@ public:
             i++;
             j--;
         }
-
         return ans;
     }
 };
+
+
+int main() {
+    int n;
+    cout << "Enter number of elements: ";
+    cin >> n;
+
+    vector<int> nums(n);
+    cout << "Enter elements:\n";
+    for (int i = 0; i < n; i++) {
+        cin >> nums[i];
+    }
+
+    Solution s;
+    cout << "Minimum Pair Sum = " << s.minPairSum(nums);
+
+    return 0;
+}
