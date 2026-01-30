@@ -25,12 +25,13 @@ int sqroot(int n)
     while(start<=end)
     {
         int mid=start+(end-start)/2;
+        int target = mid*mid;
 
-        if(mid*mid == n)
+        if(target == n)
         {
             return mid;
         }
-        if(mid*mid > n)
+        if(target > n)
         {
             end=mid-1;
         }
