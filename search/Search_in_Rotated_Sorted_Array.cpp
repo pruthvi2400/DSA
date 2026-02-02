@@ -23,7 +23,7 @@ int main()
         }
         if(arr[start]<=arr[mid] )
         {
-            if(arr[start]<=target && arr[end] > target)      
+            if(arr[start]<=target && arr[mid] > target)      
             {
                 end=mid-1;
             }
