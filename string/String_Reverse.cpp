@@ -14,6 +14,9 @@ int str_Lenght(char name[])
     return count;
 }
 
+
+// Reversing String
+
 int str_Reverse(char name[],int n)
 {
     int start=0;
@@ -46,7 +49,5 @@ int main()
     cout<<name<<endl;
 
     return 0;
-
-
 
 }
